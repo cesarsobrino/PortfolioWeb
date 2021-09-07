@@ -1,3 +1,6 @@
+var proyectosid;
+var $flecha;
+
 $(document).ready(function () {
   $(this).scrollTop(0);
   // const colors = ["#E4E4E4", "#2A2A2A", "#F3F3F3", "#000000", "#515151"];
@@ -149,6 +152,7 @@ $(window).load(function () {
     $('.i4').addClass('slideLeft');
     
     $('.presentacion').addClass('slide-in-elliptic-top-fwd');
+    $('.presentacioncv').addClass('slide-in-elliptic-top-fwd');
 
 
     setTimeout(function () {
@@ -209,7 +213,216 @@ $(window).load(function () {
   );
 
 
+
+
+  $('#paginawebactual').on( "click", function() {
+    window.location.href = 'index.html';
+  });
+  $('#paginawebantigua').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/paginasweb/portfolioCesarSobrino/");
+  });
+  $('#paginawebjuegos').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/paginasweb/Juegos/php/index.php");
+  });
+  $('#fullpageid').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/javascript/fullpage/fullpagejv/");
+  });
+  $('#parrallaxid').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/javascript/parallax/html/index.html");
+  });
+  $('#onscrollid').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/javascript/scrollactive/");
+  });
+  $('#animacionesid').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/css/animaciones/");
+  });
+  $('#loadingid').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/css/loading/");
+  });
+  $('#socialmediaid').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/css/socialnetworks/");
+  });
+  $('#caracruzid').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/juegos/caracruz/");
+  });
+  $('#precisionid').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/juegos/preciosion/");
+  });
+  $('#quieresnoviaid').on( "click", function() {
+    window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/juegos/quiereserminovia/");
+  });
+
+ proyectosid = Math.floor(Math.random() * (4)) + 1;;
+
+  console.log(proyectosid); 
+
+ 
+    if (proyectosid == 1) {
+
+      $('#proyectos1').css('left', '0');
+      $('#proyectos2').css('left', '100%');
+      $('#proyectos3').css('left', '200%');
+      $('#proyectos4').css('left', '300%');
+
+      $('#proyectos1').css('opacity', '1');
+      $('#proyectos2').css('opacity', '0');
+      $('#proyectos3').css('opacity', '0');
+      $('#proyectos4').css('opacity', '0');
+
+    } else if (proyectosid == 2) {
+
+      $('#proyectos1').css('left', '-100%');
+      $('#proyectos2').css('left', '0');
+      $('#proyectos3').css('left', '100%');
+      $('#proyectos4').css('left', '200%');
+
+      $('#proyectos1').css('opacity', '0');
+      $('#proyectos2').css('opacity', '1');
+      $('#proyectos3').css('opacity', '0');
+      $('#proyectos4').css('opacity', '0');
+    } else if (proyectosid == 3) {
+
+      $('#proyectos1').css('left', '-200%');
+      $('#proyectos2').css('left', '-100%');
+      $('#proyectos3').css('left', '0');
+      $('#proyectos4').css('left', '100%');
+
+      $('#proyectos1').css('opacity', '0');
+      $('#proyectos2').css('opacity', '0');
+      $('#proyectos3').css('opacity', '1');
+      $('#proyectos4').css('opacity', '0');
+    }
+    else if (proyectosid == 4) {
+
+      $('#proyectos1').css('left', '-300%');
+      $('#proyectos2').css('left', '-200%');
+      $('#proyectos3').css('left', '-100%');
+      $('#proyectos4').css('left', '0');
+
+      $('#proyectos1').css('opacity', '0');
+      $('#proyectos2').css('opacity', '0');
+      $('#proyectos3').css('opacity', '0');
+      $('#proyectos4').css('opacity', '1');
+    }
+    $flecha=$('.flecha');
+
 });
+
+function toright() {
+
+  
+  if (proyectosid == 4) {
+    proyectosid = 0;
+  }
+  proyectosid = proyectosid + 1;
+
+  if (proyectosid == 1) {
+
+    $('#proyectos1').css('left', '0');
+    $('#proyectos2').css('left', '100%');
+    $('#proyectos3').css('left', '200%');
+    $('#proyectos4').css('left', '300%');
+
+    $('#proyectos1').css('opacity', '1');
+    $('#proyectos2').css('opacity', '0');
+    $('#proyectos3').css('opacity', '0');
+    $('#proyectos4').css('opacity', '0');
+
+  } else if (proyectosid == 2) {
+
+    $('#proyectos1').css('left', '-100%');
+    $('#proyectos2').css('left', '0');
+    $('#proyectos3').css('left', '100%');
+    $('#proyectos4').css('left', '200%');
+
+    $('#proyectos1').css('opacity', '0');
+    $('#proyectos2').css('opacity', '1');
+    $('#proyectos3').css('opacity', '0');
+    $('#proyectos4').css('opacity', '0');
+  } else if (proyectosid == 3) {
+
+    $('#proyectos1').css('left', '-200%');
+    $('#proyectos2').css('left', '-100%');
+    $('#proyectos3').css('left', '0');
+    $('#proyectos4').css('left', '100%');
+
+    $('#proyectos1').css('opacity', '0');
+    $('#proyectos2').css('opacity', '0');
+    $('#proyectos3').css('opacity', '1');
+    $('#proyectos4').css('opacity', '0');
+  }
+  else if (proyectosid == 4) {
+
+    $('#proyectos1').css('left', '-300%');
+    $('#proyectos2').css('left', '-200%');
+    $('#proyectos3').css('left', '-100%');
+    $('#proyectos4').css('left', '0');
+
+    $('#proyectos1').css('opacity', '0');
+    $('#proyectos2').css('opacity', '0');
+    $('#proyectos3').css('opacity', '0');
+    $('#proyectos4').css('opacity', '1');
+  }
+}
+
+function toleft() {
+  if (proyectosid == 1) {
+    proyectosid = 5;
+  }
+  proyectosid = proyectosid - 1;
+  if (proyectosid == 1) {
+
+    $('#proyectos1').css('left', '0');
+    $('#proyectos2').css('left', '100%');
+    $('#proyectos3').css('left', '200%');
+    $('#proyectos4').css('left', '300%');
+
+    $('#proyectos1').css('opacity', '1');
+    $('#proyectos2').css('opacity', '0');
+    $('#proyectos3').css('opacity', '0');
+    $('#proyectos4').css('opacity', '0');
+
+  } else if (proyectosid == 2) {
+
+    $('#proyectos1').css('left', '-100%');
+    $('#proyectos2').css('left', '0');
+    $('#proyectos3').css('left', '100%');
+    $('#proyectos4').css('left', '200%');
+
+    $('#proyectos1').css('opacity', '0');
+    $('#proyectos2').css('opacity', '1');
+    $('#proyectos3').css('opacity', '0');
+    $('#proyectos4').css('opacity', '0');
+  } else if (proyectosid == 3) {
+
+    $('#proyectos1').css('left', '-200%');
+    $('#proyectos2').css('left', '-100%');
+    $('#proyectos3').css('left', '0');
+    $('#proyectos4').css('left', '100%');
+
+    $('#proyectos1').css('opacity', '0');
+    $('#proyectos2').css('opacity', '0');
+    $('#proyectos3').css('opacity', '1');
+    $('#proyectos4').css('opacity', '0');
+  }
+  else if (proyectosid == 4) {
+
+    $('#proyectos1').css('left', '-300%');
+    $('#proyectos2').css('left', '-200%');
+    $('#proyectos3').css('left', '-100%');
+    $('#proyectos4').css('left', '0');
+
+    $('#proyectos1').css('opacity', '0');
+    $('#proyectos2').css('opacity', '0');
+    $('#proyectos3').css('opacity', '0');
+    $('#proyectos4').css('opacity', '1');
+  }
+}
+
+
+
+
+
 
 // Arreglar no funciona bien
 
@@ -296,7 +509,9 @@ $(window).scroll(function () {
     $('.presentacioncv').css('margin-top', '10px');
     $('.presentacioncv').css('margin-left', '-70px');
 
+    $('.wrapper').css('transition', '0.5s');
     $('.wrapper').css('display', 'block');
+    $('.btnwrapper').css('transition', '0.5s');
     $('.btnwrapper').css('display', 'block');
   
     setTimeout(function(){ 
@@ -317,10 +532,11 @@ $(window).scroll(function () {
     $('#goup').css('opacity', '1');
     $('#goup').css('transform', 'scale(0)');
 
+    $('.wrapper').css('transition', '0.1s');
+    $('.btnwrapper').css('transition', '0.1s');
      $('.wrapper').css('opacity', '0');
       $('.btnwrapper').css('opacity', '0');
-      $('.wrapper').css('display', 'none');
-    $('.btnwrapper').css('display', 'none');
+      
 
 
     $('.presentacioncv').css('transition', '1s');
@@ -335,10 +551,13 @@ $(window).scroll(function () {
     $('.presentacioncv').css('margin-top', '0px');
     $('.presentacioncv').css('margin-left', '-135px');
 
+
     setTimeout(function(){ 
-      $('.wrapper').css('opacity', '1');
-      $('.btnwrapper').css('opacity', '1');
-      $('.presentacioncv').css('opacity','1');
+      $('.wrapper').css('opacity', '0');
+      $('.btnwrapper').css('opacity', '0');
+      $('.wrapper').css('display', 'none');
+    $('.btnwrapper').css('display', 'none');
+    $('.presentacioncv').css('opacity','1');
     }, 
     1000);
 
