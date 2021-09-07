@@ -165,7 +165,7 @@ $(window).load(function () {
     }, 1000);
 
     //deberia ser 3000
-  }, 0);
+  }, 3000);
 
 
   $("body").mousemove(function(e) {
