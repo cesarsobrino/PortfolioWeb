@@ -28,7 +28,7 @@
 
 
             /* esto deberia ser display block */
-            display:none;
+            display:block;
         }
 
         #containermenu {
