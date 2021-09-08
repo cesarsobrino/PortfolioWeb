@@ -490,7 +490,8 @@ transition: 0.3s;
 }
 
 .menuactivel{
-  background-color:#bdbdbd;
+  background-color:#d1d1d1;
+  width:20px;
 }
 .menuactives{
   opacity: 1;
