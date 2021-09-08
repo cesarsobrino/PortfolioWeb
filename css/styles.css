@@ -209,6 +209,7 @@ body{
     background-position: center;
 }
 .presentacioncv:hover{
+  transition:0.5s;
     transform:scale(1.1);
     cursor: var(--cursorw), auto;
     background-image: url(../images/downloadw.png);

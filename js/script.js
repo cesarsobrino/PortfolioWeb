@@ -499,7 +499,9 @@ $(window).scroll(function () {
     $('#goup').css('transform', 'scale(1)');
 
     $('.presentacioncv').css('transition', '1s');
-    $('.presentacioncv').css('width', '50px');
+    $('.presentacioncv').css('width', '0px');
+    $('.presentacioncv').css('height', '0px');
+    $('.presentacioncv').css('border', '0px');
     $('.presentacioncv').css('border-radius ', '100px');
     $('.presentacioncv').text('');
     $('.presentacioncv').css('position', 'fixed');
@@ -542,6 +544,8 @@ $(window).scroll(function () {
     $('.presentacioncv').css('transition', '1s');
     $('.presentacioncv').css('opacity','1');
     $('.presentacioncv').css('width', '270px');
+    $('.presentacioncv').css('height', '50px');
+    $('.presentacioncv').css('border', '0px solid #1d1d1d');
     $('.presentacioncv').css('border-radius ', '20px');
     $('.presentacioncv').text('DESCARGAR CV');
     $('.presentacioncv').css('position', 'absolute');
