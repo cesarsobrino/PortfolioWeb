@@ -117,8 +117,7 @@ $(document).ready(function () {
 $(window).load(function () {
 
 
-  disableScroll();
-
+  
   $('#loader').css('transition', '1s');
   $('#test1').css('opacity', '1');
   $('#test1').css('animation', 'stretchRight 3s forwards ease-in-out');
@@ -146,7 +145,7 @@ $(window).load(function () {
     $('#loader').css('opacity', '0');
     $('#loader').css('display', 'none');
     $("body").css('overflow-y', 'scroll');
-    enableScroll();
+
 
     $('.i1').addClass('slideRight');
     $('.i2').addClass('slideRighti2');
