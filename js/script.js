@@ -318,7 +318,7 @@ $(window).load(function() {
         window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/paginasweb/portfolioCesarSobrino/");
     });
     $('#paginawebjuegos').on("click", function() {
-        window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/paginasweb/Juegos/php/index.php");
+        window.open("https://zgamingz.000webhostapp.com/languages/es/inicio/");
     });
     $('#fullpageid').on("click", function() {
         window.open("https://cesarsobrinoarribas.000webhostapp.com/Portfolio/cesar/javascript/fullpage/fullpagejv/");
