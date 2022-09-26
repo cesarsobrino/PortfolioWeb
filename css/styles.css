@@ -1637,8 +1637,13 @@ p {
         position: absolute;
         width: 90px;
         height: 60px;
-        left: 0%;
+        left: 50%;
         margin-top: 800px;
+        transform: translate(-60%, -30px)
+    }
+    .portatil_scroll::after {
+        content: "scroll";
+        font-size: 10px;
     }
     .sobremi_container {
         margin-top: -600px;
@@ -1650,8 +1655,13 @@ p {
         position: absolute;
         width: 90px;
         height: 60px;
-        left: 0%;
+        left: 50%;
         margin-top: 200px;
+        transform: translate(-60%, -30px)
+    }
+    .portatil_scroll::after {
+        content: "scroll";
+        font-size: 10px;
     }
     .sobremi_container {
         margin-top: 0px;
